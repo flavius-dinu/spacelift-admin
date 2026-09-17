@@ -13,10 +13,8 @@ resource "spacelift_stack" "ec2_dr" {
   autodeploy = false
   labels     = ["opentofu", "ec2-dr", "managed-by:spacelift-admin"]
 
-  terraform {
-    workflow_tool = "OPENTOFU"
-    version       = var.opentofu_version
-  }
+  terraform_workflow_tool = "OPENTOFU"
+  terraform_version       = var.opentofu_version
 }
 
 resource "spacelift_context" "ec2_dr_hooks" {
