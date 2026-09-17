@@ -25,7 +25,7 @@ variable "github_namespace" {
 variable "github_integration_id" {
   description = "ID of the GitHub VCS integration to use. Leave null to use the default GitHub integration."
   type        = string
-  default     = null
+  default     = "spacelift-personal"
 }
 
 variable "branch" {
