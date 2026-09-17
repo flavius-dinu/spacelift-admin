@@ -15,6 +15,11 @@ resource "spacelift_stack" "ec2_dr" {
 
   terraform_workflow_tool = "OPEN_TOFU"
   terraform_version       = var.opentofu_version
+
+  github_enterprise {
+    namespace = var.github_namespace
+    id        = var.github_integration_id
+  }
 }
 
 resource "spacelift_context" "ec2_dr_hooks" {

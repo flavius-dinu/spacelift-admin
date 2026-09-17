@@ -16,6 +16,8 @@ Create a stack in Spacelift that points at this repo, set the workflow tool to O
 | `space_id` | no | `root` |
 | `stack_name` | no | `ec2-dr` |
 | `repository` | no | `ec2_dr` |
+| `github_namespace` | no | `flavius-dinu` |
+| `github_integration_id` | no | `null` (default GitHub integration) |
 | `branch` | no | `main` |
 | `project_root` | no | `""` |
 | `opentofu_version` | no | `1.12.6` |

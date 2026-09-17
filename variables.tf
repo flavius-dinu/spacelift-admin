@@ -16,6 +16,18 @@ variable "repository" {
   default     = "ec2_dr"
 }
 
+variable "github_namespace" {
+  description = "GitHub organization or user that owns the repository."
+  type        = string
+  default     = "flavius-dinu"
+}
+
+variable "github_integration_id" {
+  description = "ID of the GitHub VCS integration to use. Leave null to use the default GitHub integration."
+  type        = string
+  default     = null
+}
+
 variable "branch" {
   description = "Git branch tracked by the stack."
   type        = string
